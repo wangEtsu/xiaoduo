@@ -50,7 +50,7 @@ section {
 }
 
 #home {
-  background: url('/images/duoandyue.jpg')no-repeat center fixed;
+  background: url('/images/duoandyue.jpg')no-repeat center center fixed;
   background-size: cover;
   background-position: bottom;
   
