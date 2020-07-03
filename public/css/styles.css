@@ -3,6 +3,19 @@
   src: url("/fonts/Yellowtail-Regular.ttf") format("opentype");
 }
 
+@media only screen and (max-width: 600px) {
+  #home {
+    background: url('/images/bush.jpg');
+    background-image: no-repeat center center fixed;
+    background-size: cover;
+    background-position: bottom;
+  }
+}
+
+
+
+
+
 /* This class is added on scroll */
 .fixed {
 	position: fixed;
