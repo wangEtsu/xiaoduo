@@ -1,3 +1,8 @@
+@font-face {
+  font-family: YellowTail;
+  src: url("/fonts/Yellowtail-Regular.ttf") format("opentype");
+}
+
 /* This class is added on scroll */
 .fixed {
 	position: fixed;
@@ -36,7 +41,7 @@ section {
 
 .introduction {
 	padding-top: 200px;
-	font-family: 'Merriweather', serif;
+	font-family: 'YellowTail', serif;
 	color: white;
 }
 
@@ -80,3 +85,4 @@ section {
 	}
 
 }
+
