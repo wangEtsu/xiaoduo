@@ -100,6 +100,35 @@
 
   </section>
 
+ 
+
+    <div class="container">
+      <div class="gallery">
+        <img src="images/gallery8.jpg" alt="" width="100%" height="auto" class="gallery-img" />
+        <img src="images/gallery7.jpg" alt="" width="100%" height="auto" class="gallery-img" />
+        <img src="images/gallery1.jpg" alt="" width="100%" height="auto" class="gallery-img" />
+        <img src="images/gallery3.jpg" alt="" width="100%" height="auto" class="gallery-img" />
+        <img src="images/gallery9.jpg" alt="" width="100%" height="auto" class="gallery-img" />
+        <img src="images/gallery3.jpg" alt="" width="100%" height="auto" class="gallery-img" />
+        <img src="images/gallery4.jpg" alt="" width="100%" height="auto" class="gallery-img" />
+        <img src="images/gallery5.jpg" alt="" width="100%" height="auto" class="gallery-img" />
+        <img src="images/gallery6.jpg" alt="" width="100%" height="auto" class="gallery-img" />
+        <img src="images/gallery2.jpg" alt="" width="100%" height="auto" class="gallery-img" />
+        <img src="images/wrestling.jpg" alt="" width="100%" height="auto" class="gallery-img" />
+      </div> 
+    </div>
+    
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+
   <div id="timeline">
 
     <i class="fas fa-dog"></i>
@@ -265,6 +294,18 @@
 
   </section>
 
+
+<script>
+
+$(document).ready(function () {
+  $(".gallery-img").click(function(){
+    var t = $(this).attr("src");
+    $(".modal-body").html("<img src='"+t+"' class='modal-img'>");
+    $("#myModal").modal();
+  });
+});
+
+</script>
 
 </body>
 
